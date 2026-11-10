@@ -1,0 +1,5 @@
+# installed into .venv by setup.sh (Python 3.9). Mininet comes from apt, not pip.
+setuptools==65.5.0
+eventlet==0.30.2
+ryu==4.34
+networkx
