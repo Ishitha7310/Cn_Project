@@ -6,10 +6,10 @@ OpenFlow 1.3 Ryu controller.
 
 | Team member | SRN | Contribution area | Where |
 |---|---|---|---|
-| Ishitha (Member A + C) | PES1UG25CS216 | TCP content servers and clients, workload generator, performance plots; controller brain, server registry and health monitoring, server-selection policies, routing logic, and network monitoring | `app/`, `controller/` |
-| Hruthik (Member B) | PES1UG25CS211 | Mininet network manager and Ryu forwarding app (virtual IP, flow rules) | `netmanager.py`, `forwarding_app.py`, `config.py` |
+| Ishitha (Member A + C) | PES1UG25CS216 | TCP content servers and clients, workload generator, performance plots; controller brain (server registry, health monitoring, selection policies, routing logic and utilization monitoring); Mininet topology configuration/testing; VIP and ARP-proxy integration | `app/`, `controller/`, topology configuration/testing, selected VIP/ARP integration work |
+| Hruthik (Member B) | PES1UG25CS211 | Mininet network manager implementation and Ryu forwarding application, including OpenFlow flow-rule installation and packet forwarding | `netmanager.py`, `forwarding_app.py`, `config.py` |
 
-The team has two members. Ishitha is responsible for both Member A and Member C contribution areas; Hruthik is responsible for Member B. Member C is a responsibility allocation, not a third team member.
+The team has two members. Ishitha is responsible for Member A and Member C, plus selected Member B tasks (Mininet topology configuration/testing and VIP/ARP-proxy integration). Hruthik remains responsible for the core Ryu forwarding implementation and OpenFlow flow-rule installation. Keep `CONTRIBUTIONS.md` consistent with this division.
 
 ## 1. Problem and objectives
 Clients should fetch files from a service without knowing which physical server answers. The network, not the clients, decides.
